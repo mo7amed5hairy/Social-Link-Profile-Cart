@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root
+{
+    --main-color:  hsl(0, 0%, 8%);
+    --profile-color: hsl(0, 0%, 12%);
+    --paragraph-hover-color: hsl(75, 94%, 57%);
+    --white-color:#fff;
+    --text-color: hsl(0, 0%, 20%);
+    
+}
+
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+body
+{
+    background-color: var(--main-color);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile
+{
+    width: 400px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--profile-color);
+    border-radius: 10px;
+     border: 1px solid var(--profile-color); 
+    box-shadow: 5px 5px 0px 1px var(--profile-color);
+    margin-bottom: 30px;
+
+}
+.profile > .container
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 16px;
+  
+}
+.profile > .container > img
+{
+    width: 80px;
+  margin: auto;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  margin:25px 0;
+}
+
+
+
+.profile > .container > h1
+{
+    margin-bottom: 8px;
+    font-size: 25px;
+    font-weight: 500;
+    color: var(--white-color);
+}
+
+.profile > .container > span
+{
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--paragraph-hover-color);
+}
+.profile > .container > p
+{
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white-color);
+}
+.profile > .container > .Social_links
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 15px 0;
+}
+
+.profile > .container > .Social_links  a
+{
+    width: 100%;
+    text-align: center;
+    background: #60606061;
+  padding: 15px 100px;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+
+}
+
+.profile > .container > .Social_links  a:hover
+{
+    background-color: var(--paragraph-hover-color);
+    color: var(--main-color);
+    cursor: pointer;
+}
+
+.attribution
+{
+    padding-bottom: 15px;
+}
